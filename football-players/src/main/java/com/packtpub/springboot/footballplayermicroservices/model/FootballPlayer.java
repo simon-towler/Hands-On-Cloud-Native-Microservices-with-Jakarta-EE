@@ -60,6 +60,11 @@ public class FootballPlayer implements Serializable {
     @Column(name = "price")
     private BigInteger price;
 
+    // Entity must have a default constructor
+    public FootballPlayer() {
+        // deliberately empty
+    }
+
     public FootballPlayer(String name, String surname, int age, String team, String position, BigInteger price) {
         this.name = name;
         this.surname = surname;

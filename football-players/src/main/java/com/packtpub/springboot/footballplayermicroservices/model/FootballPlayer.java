@@ -73,4 +73,34 @@ public class FootballPlayer implements Serializable {
         this.position = position;
         this.price = price;
     }
+
+    // attributes must have getters for Spring REST to render them via the service
+
+    public Integer getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+    
+    public int getAge() {
+        return age;
+    }
+
+    public String getTeam() {
+        return team;
+    }
+
+    public String getPosition() {
+        return position;
+    }
+
+    public BigInteger getPrice() {
+        return price;
+    }
 }

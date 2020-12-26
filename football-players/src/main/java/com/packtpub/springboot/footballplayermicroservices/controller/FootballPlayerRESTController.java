@@ -34,7 +34,7 @@ public class FootballPlayerRESTController {
         service.deleteById(id);
     }
 
-    @RequestMapping(value = "/show/{id}", method = RequestMethod.GET, produces = "application/json")
+    @RequestMapping(value = "/show/{id}", method = RequestMethod.GET, produces = "application/jsonx")
     public Optional<FootballPlayer> findById(@PathVariable Integer id) {
         return service.findById(id);
     }

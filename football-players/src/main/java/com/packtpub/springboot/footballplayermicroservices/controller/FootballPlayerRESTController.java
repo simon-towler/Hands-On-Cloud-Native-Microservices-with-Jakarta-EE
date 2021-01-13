@@ -17,7 +17,7 @@ public class FootballPlayerRESTController {
     @Autowired
     private FootballPlayerService service;
     @ApiResponses(value = {
-        @ApiResponse(responseCode = "200", description = "Simon says uccessfully retrieved list"),
+        @ApiResponse(responseCode = "200", description = "Simon says successfully retrieved list"),
         @ApiResponse(responseCode = "404", description = "Simon says the resource you were trying to reach is not found") })
     @RequestMapping(method = RequestMethod.GET, produces = "application/json")
     public Iterable<FootballPlayer> findAll() {

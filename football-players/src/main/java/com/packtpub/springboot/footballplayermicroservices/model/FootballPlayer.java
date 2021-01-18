@@ -74,33 +74,41 @@ public class FootballPlayer implements Serializable {
         this.price = price;
     }
 
-    // attributes must have getters for Spring REST to render them via the service
+    // attributes must have getters so that Spring REST can render them via the service
+    // attributes must also have setters, so new Players submitted via API can actually be set before trying to persist them
 
     public Integer getId() {
         return id;
     }
+    public void setId(int id) { this.id = id; }
 
     public String getName() {
         return name;
     }
+    public void setName(String name) {this.name = name; }
 
     public String getSurname() {
         return surname;
     }
+    public void setSurname(String surname) { this.surname = surname; }
     
     public int getAge() {
         return age;
     }
+    public void setAge(int age) { this.age = age; }
 
     public String getTeam() {
         return team;
     }
+    public void setTeam(String team) { this.team = team; }
 
     public String getPosition() {
         return position;
     }
+    public void setPosition(String position) { this.position = position; }
 
     public BigInteger getPrice() {
         return price;
     }
+    public void setPrice(BigInteger price) { this.price = price; }
 }
